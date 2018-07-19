@@ -13,6 +13,8 @@
 2014-09-28 Bin Yuan <bin.yuan@itbconsult.com>
 * - Created
 */
+
+//Checking for commit
 @isTest (SeeAllData = false)
 private class ClsBatch_FindDuplicateForecast_Test {
     static testMethod void myUnitTest() {
