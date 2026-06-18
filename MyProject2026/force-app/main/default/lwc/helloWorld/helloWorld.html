@@ -4,5 +4,7 @@
       <p>Hello, {greeting}!</p>
       <lightning-input label="Name" value={greeting} onchange={changeHandler}></lightning-input>
     </div>
+    <div class="slds-m-around_medium">
+      <lightning-button variant="brand" label="Create Contact" title="Create Contact" onclick={createContactHandler} class="slds-m-left_x-small"></lightning-button>
   </lightning-card>
 </template>
