@@ -1,12 +1,11 @@
 public with sharing class ContactController {
-    string firstName;
-    string email;
+    @AuraEnabled
     public static void createContact(string firstName, String email) {
-        Contact contact = new Contact();
-        contact.firstName = firstName;
-        contact.email = email;
-        system.debug('contact===>',contact);
-        insert contact;
+        Contact con = new Contact();
+        con.firstName = firstName;
+        con.email = email;
+        system.debug('contact===>'+con);
+        insert con;
     }
     
 }
